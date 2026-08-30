@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona w budowie</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100dvh;
+            overflow: hidden;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-image: url('t.gif');
+            background-repeat: repeat;
+            background-position: top left;
+        }
+
+        .center {
+            border: 2px solid black;
+            background-color: white;
+            
+            width: fit-content;
+            height: auto;
+            padding: 10px 5px;
+            
+            /* Wyśrodkowanie całej grupy tekstu wewnątrz ramki */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Klasa odpowiadająca TYLKO za tekst wewnątrz ramki */
+        .center .text-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+            /* Odstęp między pierwszą a drugą linijką tekstu */
+            gap: 6px; 
+            
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        <div class="text-box">
+            <div>STRONA W BUDOWIE</div>
+            <div>UNDER CONSTRUCTION</div>
+            <div>建设中</div>
+        </div>
+    </div>
+
+</body>
+</html>
 
